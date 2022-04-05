@@ -3,12 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Joshua Honest - portfolio</title>
-	<!--online-->
-	<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/
-	bootstrap-icon@1.8.1/font/bootstrap-icons.css"> -->
-	<!-- offline -->
-	<link rel="stylesheet" type="text/css" href="icon/icofont.min.css">
+	<title>Joshua-Portfolio</title>
 	<style type="text/css">
 		*{
 			margin: 0;
@@ -18,188 +13,199 @@
 		}
 
 		.navigation{
-			background-color: #000000;
-			width: 100%;
-			height: 60px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			position: fixed;
+			background-color: #000;
+			width: 100%;
 		}
 
-		.navigation div a{
+		.navigation h1{
 			color: #fff;
-			font-size: 25px;
+			padding: 10px 20px;
+		}
+
+		.navigation h1 a{
+			color: #fff;
 			text-decoration: none;
+			font-size: 25px;
+			font-weight: 600;
 		}
 
-		.navigation div{
-			margin: 0 15px;
-			color: #fff;
+		figure{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			height: 100vh;
+			background-color: #000;
 		}
 
-		img{
+		figure img{
 			border-radius: 300px;
 		}
 
-		.hero{
-			background-color: #000;
-			height: 100vh;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-		}
-
-		.hero p{
+		figure p{
 			color: #fff;
-			text-align: center;
-			font-size: 20px;
-			padding-top: 20px;
+			padding: 20px;
 		}
 
 		.container{
 			text-align: center;
-			margin: 25px 80px 0 80px;
+			margin: 50px;
+		}
+
+		.container h1{
+			font-size: 25px;
 		}
 
 		.container p{
-			margin-top: 20px;
+			padding-top: 20px;
+			margin: 0 150px;
 		}
 
-		.project{
-			margin: 25px;
+		.skills{
 			display: flex;
 			align-items: center;
 			justify-content: center;
 		}
 
-		.project div{
-			padding: 20px 20px;
-			width: 200px;
-			border-radius: 10px;
+		.skills h2{
+			margin: 20px 80px 0;
 			background-color: #f1f1f1;
-			margin: 20px;
-			font-weight: 600;
+			padding: 20px;
 			transition: 0.3s ease;
 		}
 
-		.project div:hover{
+		.skills h2:hover{
 			background-color: #000;
 			color: #fff;
+			cursor: pointer;
 		}
 
-		.pro{
+		.project{
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
 			flex-wrap: wrap;
 		}
 
-		.pros{
+		.project h4{
 			width: 45%;
-			text-align: center;
-			margin: 15px;
+			padding: 20px;
 		}
 
-		.pros a{
+		.project h4 a{
 			text-decoration: none;
 			color: #000;
 			font-weight: 600;
-			font-size: 18px;t
 		}
 
-		.pros a:hover{
-			border-bottom: 2.5px #2e2e2e solid;
-			border border-bottom-width: thick; 
+		.project h4 a:hover{
+		   border-bottom: 2px solid black;
+		   border border-bottom-width: thick;	
 		}
 
-		.footer{
+		footer{
 			background-color: #000;
 			width: 100%;
-			display: column;
-			align-items: center;justify-content: center;
-			margin-top: 15px;
-			padding: 15px;
+		}
+
+		footer h1{
+			color: #fff;
+			text-align: center;
+			padding: 20px;
+		}
+
+		footer form{
+			align-items: center;
+			flex-direction: column;
+			display: flex;	
+		}
+
+		input[type=text], input[type=email]{
+			padding: 10px 250px 10px 20px;
+			border-radius: 10px;
+		}
+
+		textarea{
+			padding: 20px 145px;
+			border-radius: 10px;
+		}
+
+		input[type=submit]{
+			padding: 10px 215px;
+			border-radius: 10px;
 		}
 
 		input[type=text], input[type=email], textarea, input[type=button]{
-			width: 100%;
-			padding: 12px 20px;
-			margin: 8px 0;
-			display: inline-block;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			box-sizing: border-box;
+			margin: 10px;
+			
 		}
 	</style>
 </head>
 <body>
-    <div class="navigation">
-    	<div><a href="index.html">Joshua</a></div>
-        <div>||</div>
-        <div><a href="#who">WHO</a></div>
-    </div>
+	<nav class="navigation">
+		<h1><a href="#">Joshua</a></h1>
+		<h1>||</h1>
+		<h1><a href="#">WHO</a></h1>
+	</nav>
 
-   
-    <div>
-    	<div class="hero">
-    	    <img src="josh.jpeg" width="200px" height="200px" alt="my profile pic">
-    	    <p>Hello I'm joshua Honest. A full stack developer</p>
-        </div>
+	<section>
+		<figure>
+			<img src="josh.jpeg" width="200px" height="200px">
+			<p>Hello my name is Joshua Honest</p>
+		</figure>
 
-        <div class="container">
-        	<h1>WHO</h1>
-        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+		<section class="container">
+			<h1>WHO</h1>
+			<p>My name is Joshua Honest, and I'm a full stack web developer. I learnt my coding skills at KAD ICT Hub and I'm proud to say that I am qualified for any project that comes my way. I have 3 years of experience in this field for which i have worked on multiple website projects that has made profit for my clients. My passion for programming grows daily as I learn new things.</p>
+		</section>
 
-        <div class="container">
-        	<h1>Skills</h1>
-        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section class="container">
+			<h1>These are my skills</h1>
+			<p>I have great experience and i'm skilled in the below programming languages.</p>
 
-        	<div class="project">
-        		<div><h2>HTML</h2></div>
-        		<div><h2>CSS</h2></div>
-        		<div><h2>JavaScript</h2></div>
-        	</div>
-        </div>
+			<section class="skills">
+				<h2>HTML</h2>
+				<h2>CSS</h2>
+				<h2>JavaScipt</h2>
+			</section>
+		</section>
 
-        <div class="container">
-        	<h1>PROJECTS</h1>
-        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section class="container">
+			<h1>PROJECTS</h1>
+			<p>I've worked on different projects of which you can access through the following links below. My projects are of great styling and are built using the latest technologies.</p>
 
-        	<div class="pro">
-        		<div class="pros"><a href="index.html">Project 1: landing page</a></div>
-        		<div class="pros"><a href="index.html">Project 2: portfolio page</a></div>
-        		<div class="pros"><a href="index.html">Project 3: another page</a></div>
-        		<div class="pros"><a href="index.html">Project 4: something page</a></div>      		
-        	</div>
-        </div>              	
-    </div>
+			<section class="project">
+				<h4><a href="#">Project 1: Landing page</a></h4>
+				<h4><a href="#">Project 2: Summary page</a></h4>
+				<h4><a href="#">Project 3: Music page</a></h4>
+				<h4><a href="#">Project 4: Portfolio page</a></h4>
+			</section>
+		</section>
+	</section>
 
-    <div class="footer">
-    	<h1 style="text-align: center; color: #fff;">CONTACT ME</h1>
-    	<form>
-    		<input type="text" name="" placeholder="Enter full name">
-    		<input type="email" name="" placeholder="Enter Email">
-    		<textarea></textarea>
-    		<input type="button" name="" value="submit">
-    	</form>
-    </div>
+	<footer>
+		<h1>CONTACT ME</h1>
+		<form name="contact" method="POST" data-netlify="true">
+			<section>
+				<input type="text" name="fullname" placeholder="Enter fullname">
+			</section>
+
+			<section>
+				<input type="email" name="email" placeholder="Enter email">
+			</section>
+
+			<section>
+				<textarea name="message"></textarea>
+			</section>
+
+			<section>
+				<input type="submit" name="" value="submit">
+			</section>
+		</form>
+	</footer>
+
 </body>
 </html>
